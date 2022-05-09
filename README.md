@@ -3,6 +3,7 @@
 ## Build
 
 Using build, run in the root folder of the project.
+
 For Unix/mac users:
 
 ```
@@ -18,6 +19,7 @@ py -m build
 ## Installing (local installation)
 
 Using pip, run in folder with the installation file (in folder 'dist'):
+
 For Unix/mac users:
 
 ```
