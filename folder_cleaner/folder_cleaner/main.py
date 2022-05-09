@@ -56,7 +56,7 @@ def main(folder: Path):
         remove_folder(folder_to_delete)
 
 
-if __name__ == '__main__':
+def init_app():
     if len(sys.argv) < 2:
         print('Please pass the folder name to be sorted out')
 
@@ -66,3 +66,11 @@ if __name__ == '__main__':
         folder = Path(folder_name)
         print(f'Start in folder {folder.resolve()}')
         main(folder.resolve())
+
+
+def start():
+    init_app()
+
+
+if __name__ == '__main__':
+    init_app()
