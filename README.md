@@ -16,4 +16,4 @@ Run in terminal:
 clean_folder <folder name>
 ```
 
-folder name - folder, which you want to sort its content out
+folder name - folder, which you want to sort out its content
