@@ -1,8 +1,8 @@
 from pathlib import Path
 import shutil
 import sys
-from parser import parse_folder
-from normalize import normalize
+from folder_cleaner.parser import parse_folder
+from folder_cleaner.normalize import normalize
 
 
 def move_file(file_name: Path, target_folder: Path):
@@ -56,9 +56,10 @@ def main(folder: Path):
         remove_folder(folder_to_delete)
 
 
-def init_app():
+def start():
     if len(sys.argv) < 2:
         print('Please pass the folder name to be sorted out')
+        return
 
     folder_name = sys.argv[1]
 
@@ -68,9 +69,5 @@ def init_app():
         main(folder.resolve())
 
 
-def start():
-    init_app()
-
-
 if __name__ == '__main__':
-    init_app()
+    start()
